@@ -1,10 +1,10 @@
 """运行这个脚本------就可以测试模型在测试集上的精度了。"""
 
 from keras import models
-theNet = models.load_model('Digit_Recongnition.h5')
+theNet = models.load_model('.\\Digit_Recongnition.h5')
 
 import numpy as np
-mnist_data_path = "D:\\111_PythonProjects\\mnist\\mnist.npz"
+mnist_data_path = ".\\mnist.npz"
 mnist_data_loaded = np.load(mnist_data_path)
 
 x_test = mnist_data_loaded["x_test"]
